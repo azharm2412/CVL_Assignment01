@@ -14,17 +14,13 @@ Melalui implementasi ini, dilakukan analisis terhadap perubahan citra sebelum da
 
 Berikut adalah kondisi citra yang dianalisis beserta metode enhancement yang digunakan:
 
-| Kondisi Citra                        | Metode Enhancement              |
-| ------------------------------------ | ------------------------------- |
-| Low Contrast                         | Contrast Stretching             |
-|                                      | Histogram Equalization          |
-| Underexposure (Citra Gelap)          | Histogram Equalization          |
-                                       | Log Transformation              |
-| Overexposure (Citra Terlalu Terang)  | Gamma Correction                |
-| Blur                                 | Laplacian Sharpening            |
-| Noise                                | Mean Filter                     |
-|                                      | Median Filter                   |
-|                                      | Gaussian Filter                 |
+| Kondisi Citra                       | Metode Enhancement |
+|-------------------------------------|--------------------|
+| Low Contrast                        | Contrast Stretching, Histogram Equalization |
+| Underexposure (Citra Gelap)         | Histogram Equalization, Log Transformation |
+| Overexposure (Citra Terlalu Terang) | Gamma Correction |
+| Blur                                | Laplacian Sharpening |
+| Noise                               | Mean Filter, Median Filter, Gaussian Filter |
 
 Seluruh metode diimplementasikan menggunakan **Python dengan library OpenCV, NumPy, dan Matplotlib**.
 
